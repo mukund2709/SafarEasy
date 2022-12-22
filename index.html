@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Safar Easy</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+
+</head>
+
+<body>
+  <script>
+            const myModal = document.getElementById('myModal')
+              const myInput = document.getElementById('myInput')
+
+              myModal.addEventListener('shown.bs.modal', () => {
+                myInput.focus()
+              })
+  </script>
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Launch demo modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+       
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        We can't accept online Services right now
+        Please contact us to complete your purchase.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Got it</button>
+        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container d-flex align-items-center">
+
+      <h1 class="logo me-auto"><a href="index.html"><img src="assets/img/logo.png" alt=""></a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <section>
+    <div class="container">
+      <div class="row">
+          <img src="assets/img/Picture1.jpg" alt="" height="700">
+      </div>
+    </div>
+  </section>
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+        <div class="row content">
+          <label for="pac-input">Enter Location Here:</label>
+          <input id="pac-input" class="controls" type="text" placeholder="Search Box">
+          <div  id="map-canvas"></div>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d3560.6041880662374!2d75.8142183!3d26.820729!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1671713672726!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Clients Section ======= -->
+    <section id="clients" class="portfolio section-bg">
+      <div class="container">
+        <h1>Our Services</h1>
+
+        <div class="row d-flex justify-content-between">
+
+          <div class="card" style="width: 18rem;">
+            <img src="assets\img\mechanic.jpg" height="250" width="250" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Mechanic on Demand</h5>      
+              <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" >Call Mechanic</a>
+            </div>
+          </div>
+
+
+          <div class="card" style="width: 18rem;">
+            <img src="assets/img/checking.jpg" height="250" width="250" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Vehicle Parts Checking</h5>              
+              <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Call Mechanic</a>
+            </div>
+          </div>
+
+
+          <div class="card" style="width: 18rem;">
+            <img src="assets/img/spareParts.jpg" height="250" width="250" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Spare Parts on Demand</h5>
+              
+              <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" >Call Mechanic</a>
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem;">
+            <img src="assets/img/Fuel.jpg" height="250" width="250" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Fuel Delivery</h5>
+              
+              <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"> Call Mechanic </button>
+              <!-- <a href="#"> Go somewhere</a> -->
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Clients Section -->
+
+    
+
+    <!-- ======= Portfolio Section ======= -->
+    <!-- <section id="portfolio" class="portfolio">
+      
+      <div class="container">
+        <h1>Contact Us</h1>
+
+        <div class ="row">
+
+          <div class="container_form">
+            <form>
+          
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="firstname" placeholder="Your name..">
+          
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+          
+              <label for="country">Country</label>
+              <select id="country" name="country">
+                <option value="australia">Australia</option>
+                <option value="canada">Canada</option>
+                <option value="usa">USA</option>
+              </select>
+          
+              <label for="subject">Subject</label>
+              <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+          
+              <input type="submit" value="Submit">
+          
+            </form>
+          </div>
+            
+      
+
+        </div>
+      </div>
+
+      </div>
+    </section>End Portfolio Section -->
+
+
+    <section id="contact" class="contact">
+      <div class="container">
+
+          <h1>Contact Us</h1>
+
+        <div class="row mt-5">
+
+          <div class="col-lg-4">
+            <div class="info">
+              <div class="address">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Location:</h4>
+                <br>
+                <h3 class="bi">IIHMR UNIVERSITY</h3>
+                <p>
+                  Prabhu Dayal Marg,near Sanganer Airport, <br>
+                  Maruti Nagar Jaipur, Rajasthan, India<br><br>
+                 
+              </div>
+
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <p>withyousupport@gmail.com</p>
+              </div>
+
+              <div class="phone">
+                <i class="bi bi-phone"></i>
+                <h4>Call:</h4>
+                <p>+91 1255488550</p>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="col-lg-8 mt-5 mt-lg-0">
+
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+              </div>
+              <div class="form-group mt-3">
+                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row d-flex justify-content-center">
+
+          <div class="col-lg-3 col-md-3">
+            <div class="footer-info">
+              <h3>IIHMR UNIVERSITY</h3>
+              <p>
+                Prabhu Dayal Marg,near Sanganer Airport, <br>
+                Maruti Nagar Jaipur, Rajasthan, India<br><br>
+                <strong>Phone:</strong> +91 1234456790<br>
+                <strong>Email:</strong> withyousupport@gmail.com<br>
+              </p>
+              <div class="social-links mt-3">
+                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-3 footer-links">
+            <h4>Policies</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy Policy</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Safety Policy</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Customer Care </a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Helpline No.</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Anti Discrimination policy</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-3 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Mechanic On Demand</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Vehicle Checking</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Spare Part On Demand</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Fuel Delivery</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Work with us</a></li>
+            </ul>
+          </div>
+
+
+
+        </div>
+      </div>
+    </div>
+
+
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center">
+    <i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initAutocomplete&libraries=places&v=weekly">
+
+  </script>
+  
+  <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initAutocomplete&libraries=places&v=weekly"
+      defer
+    ></script>
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
